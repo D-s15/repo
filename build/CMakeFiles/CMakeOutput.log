@@ -1,0 +1,100 @@
+The system is: Linux - 5.15.0-100-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc 
+Build flags: -mp=gpu;-O2
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is NVHPC, found in "/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_37a20/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37a20.dir/build.make CMakeFiles/cmTC_37a20.dir/build
+gmake[1]: Entering directory '/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o
+/opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc   -mp=gpu -O2    -v -MD -MT CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3
+Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3
+Export NVHPC_CURRENT_CUDA_VERSION=12.3.101
+Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3
+Export PGI=/opt/nvidia/hpc_sdk
+Create file CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d
+
+/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=12 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__CX16__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__SHSTK__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/opt/intel/oneapi/tbb/2021.11/env/../include -I/opt/intel/oneapi/mpi/2021.11/include -I/opt/intel/oneapi/mkl/2024.0/include -I/opt/intel/oneapi/ippcp/2021.9/include -I/opt/intel/oneapi/ipp/2021.10/include -I/opt/intel/oneapi/dpl/2022.3/include -I/opt/intel/oneapi/dpcpp-ct/2024.0/include -I/opt/intel/oneapi/dnnl/2024.0/include -I/opt/intel/oneapi/dev-utilities/2024.0/include -I/opt/intel/oneapi/dal/2024.0/include/dal -I/opt/intel/oneapi/compiler/2024.0/opt/oclfpga/include -I/opt/intel/oneapi/ccl/2021.11/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3/include --sys_include /usr/lib/gcc/x86_64-linux-gnu/12/include --sys_include /usr/local/include --sys_include /usr/include/x86_64-linux-gnu --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_OPENMP=202011 -DCUDA_VERSION=12030 -DPGI_TESLA_TARGET -D_PGI_HX --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=120300 -D__pgnu_vsn=120300 --no_fixed_bp --target_gpu --mp -D_OPENMP=202011 --dependencies_target_to_stdout CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -q -o /tmp/nvcC0WAluGN8P7t7.il /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -- /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -vect 56 -y 34 16 -x 37 0x480000 -x 34 0x8 -x 32 67108864 -y 19 8 -y 35 0 -x 42 0x30 -x 39 0x40 -x 42 0x20000 -x 39 0x80 -x 59 4 -x 129 2 -y 129 0x8000 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -il /tmp/nvcC0WAluGN8P7t7.il -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=120300 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -autoinl 10 -x 168 400 -x 174 128000 -x 14 0x200000 -x 14 0x400000 -autoinl 10 -x 168 400 -x 174 128000 -x 14 0x200000 -x 14 0x400000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 77 0x04 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 163 0x1 -x 186 0x80000 -cudaver 12030 -x 194 0x40000 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -x 9 1 -x 136 0x11 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -x 9 1 -x 136 0x11 -gnuvsn 120300 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -x 194 0x20000000 -x 251 0x2 -x 233 0x1 -x 205 2 -x 233 0x100 -x 233 0x400 -cmdline '+nvc /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -mp=gpu -O2 -Mvect=simd -Mno-signed-zeros -Minline_cpu_f -v -MD -MT CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -c' -asm /tmp/nvcC0WAlu5-jb3AZ.ll
+NVC++/x86-64 Linux 24.3-0: compilation successful
+
+/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=native /tmp/nvcC0WAlu5-jb3AZ.ll -S -o /tmp/nvc80WAl0d-xKruf.llvm
+
+/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/share/llvm/bin/llc /tmp/nvc80WAl0d-xKruf.llvm -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+shstk -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o
+Unlinking /tmp/nvcC0WAluGN8P7t7.il
+Unlinking /tmp/nvc80WAl0IJ-50pQ.s
+Unlinking /tmp/nvcC0WAlu5-jb3AZ.ll
+Unlinking /tmp/nvc80WAl0d-xKruf.llvm
+Linking C executable cmTC_37a20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37a20.dir/link.txt --verbose=1
+/opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc -mp=gpu -O2   -v CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -o cmTC_37a20 
+Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3
+Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3
+Export NVHPC_CURRENT_CUDA_VERSION=12.3.101
+Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3
+Export PGI=/opt/nvidia/hpc_sdk
+
+/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/nvdd -cuda12030 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/nvhpc.ld -L/opt/intel/oneapi/tbb/2021.11/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.11/lib -L/opt/intel/oneapi/mkl/2024.0/lib/ -L/opt/intel/oneapi/ippcp/2021.9/lib/ -L/opt/intel/oneapi/ipp/2021.10/lib -L/opt/intel/oneapi/dpl/2022.3/lib -L/opt/intel/oneapi/dnnl/2024.0/lib -L/opt/intel/oneapi/dal/2024.0/lib -L/opt/intel/oneapi/compiler/2024.0/lib -L/opt/intel/oneapi/ccl/2021.11/lib/ -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/12/ CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3/lib64 -o cmTC_37a20 -L/usr/lib/gcc/x86_64-linux-gnu/12//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/acc_init_link_mp.o -lacchost -laccdevaux -laccdevice --as-needed -lnvhpcman --no-as-needed -ldl -lcudadevice -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-linux-gnu/12//crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+gmake[1]: Leaving directory '/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_37a20/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37a20.dir/build.make CMakeFiles/cmTC_37a20.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc   -mp=gpu -O2    -v -MD -MT CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3]
+  ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3]
+  ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.3.101]
+  ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3]
+  ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+  ignore line: [Create file CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d]
+  ignore line: []
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/nvcpfe -- --llalign -D__GNUC__=12 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -D__unix -D__unix__ -Dunix -Dlinux -D__linux -D__linux__ -D__NO_MATH_INLINES -D__LP64__ -D__x86_64 -D__x86_64__ -D__LONG_MAX__=9223372036854775807L '-D__SIZE_TYPE__=unsigned long int' '-D__PTRDIFF_TYPE__=long int' -D__amd64 -D__amd64__ -D__k8 -D__k8__ -D__MMX__ -D__SSE_MATH__ -D__MMX_WITH_SSE__ -D__SSE__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE3__ -D__SSSE3__ -D__SSE4A__ -D__SSE4_1__ -D__SSE4_2__ -D__ABM__ -D__ADX__ -D__AES__ -D__AVX__ -D__AVX2__ -D__BMI__ -D__BMI2__ -D__CLFLUSHOPT__ -D__CLWB__ -D__CLZERO__ -D__CX16__ -D__F16C__ -D__FMA__ -D__FSGSBASE__ -D__FXSR__ -D__LZCNT__ -D__MOVBE__ -D__MWAITX__ -D__PCLMUL__ -D__PKU__ -D__POPCNT__ -D__PRFCHW__ -D__RDPID__ -D__RDRND__ -D__RDSEED__ -D__LAHF_SAHF__ -D__SHA__ -D__SHSTK__ -D__VAES__ -D__VPCLMULQDQ__ -D__WBNOINVD__ -D__XSAVE__ -D__XSAVEC__ -D__XSAVEOPT__ -D__XSAVES__ -D__PGI -D__NVCOMPILER -D_PGCG_SOURCE --c -I- -I/opt/intel/oneapi/tbb/2021.11/env/../include -I/opt/intel/oneapi/mpi/2021.11/include -I/opt/intel/oneapi/mkl/2024.0/include -I/opt/intel/oneapi/ippcp/2021.9/include -I/opt/intel/oneapi/ipp/2021.10/include -I/opt/intel/oneapi/dpl/2022.3/include -I/opt/intel/oneapi/dpcpp-ct/2024.0/include -I/opt/intel/oneapi/dnnl/2024.0/include -I/opt/intel/oneapi/dev-utilities/2024.0/include -I/opt/intel/oneapi/dal/2024.0/include/dal -I/opt/intel/oneapi/compiler/2024.0/opt/oclfpga/include -I/opt/intel/oneapi/ccl/2021.11/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/include --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/include-stdexec --sys_include /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3/include --sys_include /usr/lib/gcc/x86_64-linux-gnu/12/include --sys_include /usr/local/include --sys_include /usr/include/x86_64-linux-gnu --sys_include /usr/include -D__PGLLVM__ -D__NVCOMPILER_LLVM__ -D__extension__= -D_OPENMP=202011 -DCUDA_VERSION=12030 -DPGI_TESLA_TARGET -D_PGI_HX --preinclude _cplus_preinclude.h --preinclude_macros _cplus_macros.h --gnu_version=120300 -D__pgnu_vsn=120300 --no_fixed_bp --target_gpu --mp -D_OPENMP=202011 --dependencies_target_to_stdout CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -D_NVHPC_RDC --dependencies_to_file CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -q -o /tmp/nvcC0WAluGN8P7t7.il /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -- /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -opt 2 -x 119 0xa10000 -x 122 0x40 -x 123 0x1000 -x 127 4 -x 127 17 -x 19 0x400000 -x 28 0x40000 -x 120 0x10000000 -x 70 0x8000 -x 122 1 -x 125 0x20000 -quad -vect 56 -y 34 16 -x 37 0x480000 -x 34 0x8 -x 32 67108864 -y 19 8 -y 35 0 -x 42 0x30 -x 39 0x40 -x 42 0x20000 -x 39 0x80 -x 59 4 -x 129 2 -y 129 0x8000 -tp znver3 -x 120 0x1000 -astype 0 -x 121 1 -fn /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -il /tmp/nvcC0WAluGN8P7t7.il -x 123 0x80000000 -x 123 4 -x 119 0x20 -def __pgnu_vsn=120300 -x 70 0x40000000 -x 183 4 -x 121 0x800 -x 6 0x20000 -x 122 0x400000 -y 125 0x100000 -autoinl 10 -x 168 400 -x 174 128000 -x 14 0x200000 -x 14 0x400000 -autoinl 10 -x 168 400 -x 174 128000 -x 14 0x200000 -x 14 0x400000 -x 249 170 -x 120 0x200000 -x 70 0x40000000 -x 8 0x40000000 -x 164 0x800000 -x 71 0x2000 -x 71 0x4000 -x 34 0x40000000 -x 77 0x04 -x 120 0x1000000 -x 73 0x04 -x 231 0x800 -x 68 0x1 -x 39 4 -x 56 0x10 -x 26 0x10 -x 26 1 -x 56 0x4000 -accel tesla -x 197 0 -x 175 0 -x 203 0 -x 204 0 -x 227 0xFFFF -x 180 0x4000400 -x 121 0xc00 -x 186 0x80 -x 163 0x1 -x 186 0x80000 -cudaver 12030 -x 194 0x40000 -x 176 0x100 -cudacap 80 -x 189 0x8000 -y 163 0xc0000000 -x 189 0x10 -y 189 0x4000000 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3 -x 187 0x40000 -x 187 0x8000000 -x 60 512 -x 9 1 -x 136 0x11 -mp -x 69 0x200 -x 69 0x400 -x 69 2 -x 9 1 -x 136 0x11 -gnuvsn 120300 -x 69 0x200 -x 123 0x400 -x 180 0x4000000 -x 194 0x20000000 -x 251 0x2 -x 233 0x1 -x 205 2 -x 233 0x100 -x 233 0x400 -cmdline '+nvc /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -mp=gpu -O2 -Mvect=simd -Mno-signed-zeros -Minline_cpu_f -v -MD -MT CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -c' -asm /tmp/nvcC0WAlu5-jb3AZ.ll]
+  ignore line: [NVC++/x86-64 Linux 24.3-0: compilation successful]
+  ignore line: []
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/share/llvm/bin/opt '-passes=default<O2>' -slp-vectorize-hor=true -memdep-block-scan-limit=160 -nvhpc-consider-undef=true -nvhpc-unswitch-loops-with-trip-count=2 -mcpu=native /tmp/nvcC0WAlu5-jb3AZ.ll -S -o /tmp/nvc80WAl0d-xKruf.llvm]
+  ignore line: []
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/share/llvm/bin/llc /tmp/nvc80WAl0d-xKruf.llvm -march=x86-64 -mcpu=native -mattr=+mmx -mattr=+sse -mattr=+sse2 -mattr=+sse3 -mattr=+ssse3 -mattr=+sse4a -mattr=+sse4.1 -mattr=+sse4.2 -mattr=+avx -mattr=+avx2 -mattr=+f16c -mattr=+fma -mattr=+xsave -mattr=+xsaveopt -mattr=+xsavec -mattr=+xsaves -mattr=+popcnt -mattr=+sha -mattr=+aes -mattr=+pclmul -mattr=+clflushopt -mattr=+fsgsbase -mattr=+rdrnd -mattr=+bmi -mattr=+bmi2 -mattr=+lzcnt -mattr=+fxsr -mattr=+mwaitx -mattr=+clzero -mattr=+pku -mattr=+vaes -mattr=+vpclmulqdq -mattr=+adx -mattr=+clwb -mattr=+cx16 -mattr=+movbe -mattr=+prfchw -mattr=+rdpid -mattr=+rdseed -mattr=+sahf -mattr=+shstk -mattr=+wbnoinvd -O2 -x86-cmov-converter=0 -dwarf-directory=false -non-global-value-max-name-size=4294967295 --align-all-functions=6 -nvhpc-memzero -filetype=obj --frame-pointer=none -o CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Unlinking /tmp/nvcC0WAluGN8P7t7.il]
+  ignore line: [Unlinking /tmp/nvc80WAl0IJ-50pQ.s]
+  ignore line: [Unlinking /tmp/nvcC0WAlu5-jb3AZ.ll]
+  ignore line: [Unlinking /tmp/nvc80WAl0d-xKruf.llvm]
+  ignore line: [Linking C executable cmTC_37a20]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37a20.dir/link.txt --verbose=1]
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc -mp=gpu -O2   -v CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -o cmTC_37a20 ]
+  ignore line: [Export PGI_CURR_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3]
+  ignore line: [Export NVHPC_CURRENT_CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3]
+  ignore line: [Export NVHPC_CURRENT_CUDA_VERSION=12.3.101]
+  ignore line: [Export NVCOMPILER=/opt/nvidia/hpc_sdk/Linux_x86_64/24.3]
+  ignore line: [Export PGI=/opt/nvidia/hpc_sdk]
+  ignore line: []
+  ignore line: [/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/acclnk -nvidia /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/bin/tools/nvdd -cuda12030 -cudaroot /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3 -computecap=80 -nvvm70 -init=ctxrel /usr/bin/ld /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12//crtbegin.o --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -T /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/nvhpc.ld -L/opt/intel/oneapi/tbb/2021.11/env/../lib/intel64/gcc4.8 -L/opt/intel/oneapi/mpi/2021.11/lib -L/opt/intel/oneapi/mkl/2024.0/lib/ -L/opt/intel/oneapi/ippcp/2021.9/lib/ -L/opt/intel/oneapi/ipp/2021.10/lib -L/opt/intel/oneapi/dpl/2022.3/lib -L/opt/intel/oneapi/dnnl/2024.0/lib -L/opt/intel/oneapi/dal/2024.0/lib -L/opt/intel/oneapi/compiler/2024.0/lib -L/opt/intel/oneapi/ccl/2021.11/lib/ -L/opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib -L/usr/lib64 -L/usr/lib/gcc/x86_64-linux-gnu/12/ CMakeFiles/cmTC_37a20.dir/CMakeCCompilerABI.c.o -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib -rpath /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/cuda/12.3/lib64 -o cmTC_37a20 -L/usr/lib/gcc/x86_64-linux-gnu/12//../../../../lib64 /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/acc_init_link_cuda.o /opt/nvidia/hpc_sdk/Linux_x86_64/24.3/compilers/lib/acc_init_link_mp.o -lacchost -laccdevaux -laccdevice --as-needed -lnvhpcman --no-as-needed -ldl -lcudadevice -lnvomp -ldl --as-needed -lnvhpcatm -latomic --no-as-needed -lpthread -lnvcpumath -lnsnvc -lnvc -lgcc -lc -lgcc_s -lm /usr/lib/gcc/x86_64-linux-gnu/12//crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+  ignore line: [gmake[1]: Leaving directory '/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+

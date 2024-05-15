@@ -1,0 +1,3 @@
+/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/main.dir
+/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/edit_cache.dir
+/home/alunos/tei/2024/tei20307/repo/build/CMakeFiles/rebuild_cache.dir

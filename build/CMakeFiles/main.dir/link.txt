@@ -1,0 +1,1 @@
+/opt/nvidia/hpc_sdk/Linux_x86_64/2024/compilers/bin/nvc -mp=gpu -O2 CMakeFiles/main.dir/main.c.o -o main 
