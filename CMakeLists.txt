@@ -11,8 +11,7 @@ set(CMAKE_C_FLAGS "-mp=gpu -O2" CACHE STRING "NVC OPENMP")
 
 # set the project name
 project(repo VERSION 0.1 LANGUAGES C)
-add_executable(main
-  main.c
+add_executable(main ${SOURCES} ${STB_SRC_DIR}/stb_image_write.c
 omphpc.h
   stb_image.h
   stb_image_write.h
