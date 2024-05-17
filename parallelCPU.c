@@ -69,7 +69,7 @@ int main() {
     unsigned char *image = (unsigned char *)malloc(3 * WIDTH * HEIGHT * sizeof(unsigned char));
     if (image == NULL) {
         printf(stderr, "Erro ao alocar memória para a imagem.\n");
-        return 1;
+        return EXIT_FAILURE;
     }
 
     double start_time = omp_get_wtime();
