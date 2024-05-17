@@ -7,8 +7,8 @@
 #define WIDTH 7680
 #define HEIGHT 4320
 #define MAX_ITER 1000
-#define TIME_LIMIT 3600 // Limite de tempo em segundos
-#define FILENAME_LENGTH 50 // Tamanho máximo do nome do ficheiro
+#define TIME_LIMIT 30 // Limite de tempo em segundos
+#define FILENAME_LENGTH 50 // Tamanho máximo do nome do arquivo
 
 // Função para calcular a cor de um ponto no conjunto de Mandelbrot
 int mandelbrot(double real, double imag) {
@@ -31,33 +31,34 @@ void generate_and_save_image(unsigned char *image, int image_num) {
     double x_step = 3.5 / WIDTH;
     double y_step = 2.0 / HEIGHT;
 
-    clock_t start_time = clock();
+    clock_t start_time = clock(); // Capturar o tempo de início
 
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
             double real = -2.5 + x * x_step;
             double imag = -1.0 + y * y_step;
             int iter = mandelbrot(real, imag);
-
+            // Mapeamento do valor iter para uma cor
             int red = (iter * 255) / MAX_ITER;
             int blue = 255 - red;
             int green = 0;
-
-            image[3 * (y * WIDTH + x) + 0] = red;
-            image[3 * (y * WIDTH + x) + 1] = green;
-            image[3 * (y * WIDTH + x) + 2] = blue;
+            // Atribuir a cor ao pixel na imagem
+            image[3 * (y * WIDTH + x) + 0] = red;   // Red
+            image[3 * (y * WIDTH + x) + 1] = green; // Green
+            image[3 * (y * WIDTH + x) + 2] = blue;  // Blue
         }
     }
 
     clock_t end_time = clock(); // Capturar o tempo de término
-    double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC; 
+    double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC; // Calcular o tempo decorrido
 
+    // Criar o nome do arquivo usando o número da imagem
     char filename[FILENAME_LENGTH];
-    printf(filename, FILENAME_LENGTH, "images/sequencial/mandelbrot_%d.jpg", image_num);
+    snprintf(filename, FILENAME_LENGTH, "images/sequencial/mandelbrot_%d.jpg", image_num);
 
-
+    // Escrever a imagem em um arquivo JPEG usando a biblioteca STB
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {
-        printf(stderr, "Erro ao escrever a imagem %s.\n", filename);
+        fprintf(stderr, "Erro ao escrever a imagem %s.\n", filename);
     } else {
         printf("Imagem %s gerada e salva com sucesso! Tempo de execução: %.6f segundos\n", filename, elapsed_time);
     }
@@ -66,22 +67,22 @@ void generate_and_save_image(unsigned char *image, int image_num) {
 int main() {
     unsigned char *image = (unsigned char *)malloc(3 * WIDTH * HEIGHT * sizeof(unsigned char));
     if (image == NULL) {
-        printf(stderr, "Erro ao alocar memória para a imagem.\n");
-        return EXIT_FAILURE;
+        fprintf(stderr, "Erro ao alocar memória para a imagem.\n");
+        return 1;
     }
 
-    clock_t start_time = clock();
+    clock_t start_time = clock(); // Capturar o tempo de início
 
     int image_num = 1;
     while (1) {
         generate_and_save_image(image, image_num);
         clock_t current_time = clock();
         if ((double)(current_time - start_time) / CLOCKS_PER_SEC >= TIME_LIMIT) {
-            break;
+            break; // Sai do loop se o tempo limite for atingido
         }
         image_num++;
     }
 
     free(image);
-    return EXIT_SUCCESS;
+    return 0;
 }

@@ -1,6 +1,7 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include <stdio.h>
 #include <stdlib.h>
+#include <omp.h>
 #include "stb_image_write.h"
 #include <time.h>
 
@@ -8,7 +9,7 @@
 #define HEIGHT 4320
 #define MAX_ITER 1000
 #define TIME_LIMIT 3600 // Limite de tempo em segundos
-#define FILENAME_LENGTH 50 // Tamanho máximo do nome do ficheiro
+#define FILENAME_LENGTH 50 // Tamanho máximo do nome do arquivo
 
 // Função para calcular a cor de um ponto no conjunto de Mandelbrot
 int mandelbrot(double real, double imag) {
@@ -31,14 +32,15 @@ void generate_and_save_image(unsigned char *image, int image_num) {
     double x_step = 3.5 / WIDTH;
     double y_step = 2.0 / HEIGHT;
 
-    clock_t start_time = clock();
+    double start_time = omp_get_wtime();
 
+    #pragma omp parallel for collapse(2)
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
             double real = -2.5 + x * x_step;
             double imag = -1.0 + y * y_step;
             int iter = mandelbrot(real, imag);
-
+            
             int red = (iter * 255) / MAX_ITER;
             int blue = 255 - red;
             int green = 0;
@@ -49,15 +51,15 @@ void generate_and_save_image(unsigned char *image, int image_num) {
         }
     }
 
-    clock_t end_time = clock(); // Capturar o tempo de término
-    double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC; 
+    double end_time = omp_get_wtime();
+    double elapsed_time = end_time - start_time;
 
     char filename[FILENAME_LENGTH];
-    printf(filename, FILENAME_LENGTH, "images/sequencial/mandelbrot_%d.jpg", image_num);
+    snprintf(filename, FILENAME_LENGTH, "images/parallel/mandelbrot_%d.jpg", image_num);
 
-
+   
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {
-        printf(stderr, "Erro ao escrever a imagem %s.\n", filename);
+        fprintf(stderr, "Erro ao escrever a imagem %s.\n", filename);
     } else {
         printf("Imagem %s gerada e salva com sucesso! Tempo de execução: %.6f segundos\n", filename, elapsed_time);
     }
@@ -66,18 +68,18 @@ void generate_and_save_image(unsigned char *image, int image_num) {
 int main() {
     unsigned char *image = (unsigned char *)malloc(3 * WIDTH * HEIGHT * sizeof(unsigned char));
     if (image == NULL) {
-        printf(stderr, "Erro ao alocar memória para a imagem.\n");
-        return EXIT_FAILURE;
+        fprintf(stderr, "Erro ao alocar memória para a imagem.\n");
+        return 1;
     }
 
-    clock_t start_time = clock();
+    double start_time = omp_get_wtime();
 
     int image_num = 1;
     while (1) {
         generate_and_save_image(image, image_num);
-        clock_t current_time = clock();
-        if ((double)(current_time - start_time) / CLOCKS_PER_SEC >= TIME_LIMIT) {
-            break;
+        double current_time = omp_get_wtime();
+        if ((current_time - start_time) >= TIME_LIMIT) {
+            break; 
         }
         image_num++;
     }
