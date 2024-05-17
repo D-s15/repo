@@ -55,11 +55,11 @@ void generate_and_save_image(unsigned char *image, int image_num) {
     double elapsed_time = end_time - start_time;
 
     char filename[FILENAME_LENGTH];
-    snprintf(filename, FILENAME_LENGTH, "images/parallel/mandelbrot_%d.jpg", image_num);
+    printf(filename, FILENAME_LENGTH, "images/parallel/mandelbrot_%d.jpg", image_num);
 
    
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {
-        fprintf(stderr, "Erro ao escrever a imagem %s.\n", filename);
+        printf(stderr, "Erro ao escrever a imagem %s.\n", filename);
     } else {
         printf("Imagem %s gerada e salva com sucesso! Tempo de execução: %.6f segundos\n", filename, elapsed_time);
     }
@@ -68,7 +68,7 @@ void generate_and_save_image(unsigned char *image, int image_num) {
 int main() {
     unsigned char *image = (unsigned char *)malloc(3 * WIDTH * HEIGHT * sizeof(unsigned char));
     if (image == NULL) {
-        fprintf(stderr, "Erro ao alocar memória para a imagem.\n");
+        printf(stderr, "Erro ao alocar memória para a imagem.\n");
         return 1;
     }
 
