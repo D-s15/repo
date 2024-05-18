@@ -153,6 +153,54 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+parallelCPU.o: parallelCPU.c.o
+.PHONY : parallelCPU.o
+
+# target to build an object file
+parallelCPU.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/parallelCPU.c.o
+.PHONY : parallelCPU.c.o
+
+parallelCPU.i: parallelCPU.c.i
+.PHONY : parallelCPU.i
+
+# target to preprocess a source file
+parallelCPU.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/parallelCPU.c.i
+.PHONY : parallelCPU.c.i
+
+parallelCPU.s: parallelCPU.c.s
+.PHONY : parallelCPU.s
+
+# target to generate assembly for a file
+parallelCPU.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/parallelCPU.c.s
+.PHONY : parallelCPU.c.s
+
+sequencial.o: sequencial.c.o
+.PHONY : sequencial.o
+
+# target to build an object file
+sequencial.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sequencial.c.o
+.PHONY : sequencial.c.o
+
+sequencial.i: sequencial.c.i
+.PHONY : sequencial.i
+
+# target to preprocess a source file
+sequencial.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sequencial.c.i
+.PHONY : sequencial.c.i
+
+sequencial.s: sequencial.c.s
+.PHONY : sequencial.s
+
+# target to generate assembly for a file
+sequencial.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sequencial.c.s
+.PHONY : sequencial.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +213,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... parallelCPU.o"
+	@echo "... parallelCPU.i"
+	@echo "... parallelCPU.s"
+	@echo "... sequencial.o"
+	@echo "... sequencial.i"
+	@echo "... sequencial.s"
 .PHONY : help
 
 

@@ -55,7 +55,7 @@ void generate_and_save_image(unsigned char *image, int image_num) {
     double elapsed_time = end_time - start_time;
 
     char filename[FILENAME_LENGTH];
-    printf(filename, FILENAME_LENGTH, "images/parallel/mandelbrot_%d.jpg", image_num);
+    printf(filename, FILENAME_LENGTH, "mandelbrot_%d.jpg", image_num);
 
    
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {

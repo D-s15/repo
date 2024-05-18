@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/main.c.o"
   "CMakeFiles/main.dir/main.c.o.d"
+  "CMakeFiles/main.dir/parallelCPU.c.o"
+  "CMakeFiles/main.dir/parallelCPU.c.o.d"
+  "CMakeFiles/main.dir/sequencial.c.o"
+  "CMakeFiles/main.dir/sequencial.c.o.d"
   "main"
   "main.pdb"
 )

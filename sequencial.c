@@ -54,7 +54,7 @@ void generate_and_save_image(unsigned char *image, int image_num) {
 
     // Criar o nome do arquivo usando o número da imagem
     char filename[FILENAME_LENGTH];
-    snprintf(filename, FILENAME_LENGTH, "images/sequencial/mandelbrot_%d.jpg", image_num);
+    snprintf(filename, FILENAME_LENGTH, "mandelbrot_%d.jpg", image_num);
 
     // Escrever a imagem em um arquivo JPEG usando a biblioteca STB
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {

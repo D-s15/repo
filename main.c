@@ -49,11 +49,11 @@ void generate_and_save_image(unsigned char *image, int image_num) {
         }
     }
 
-    clock_t end_time = clock(); // Capturar o tempo de término
+    clock_t end_time = clock();
     double elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC; 
 
     char filename[FILENAME_LENGTH];
-    printf(filename, FILENAME_LENGTH, "images/sequencial/mandelbrot_%d.jpg", image_num);
+    printf(filename, FILENAME_LENGTH, "mandelbrot_%d.jpg", image_num);
 
 
     if (!stbi_write_jpg(filename, WIDTH, HEIGHT, 3, image, 100)) {
